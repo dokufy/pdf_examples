@@ -2,32 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@page {
+  size: A4;
+  margin: 30mm 26mm 30mm 26mm;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  @bottom-center {
+    vertical-align: center;
+    text-align: center;
+    font-size: 12px;
+    content: "Boulder Heights Gym, Inc. | 1234 Maple Street, Brooklyn, NY 11201, USA | (718) 555-1234";
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  @bottom-left-corner {
+    margin: auto auto;
+    height: 60px;
+    width: 60px;
+    content: "";
+    background: url(../public/qr.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  @bottom-right-corner {
+    vertical-align: center;
+    text-align: center;
+    font-size: 12px;
+    content: "Page " counter(page) "/" counter(pages);
   }
 }
