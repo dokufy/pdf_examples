@@ -5,8 +5,14 @@ const indexPath = path.join(buildDir, "index.html");
 
 function moveFilesAndPathsToRoot(dir) {
   let pathsToChange = moveFilesToRoot(dir, []);
+  console.log(pathsToChange);
+  const css_paths = getCssFiles(buildDir);
 
   replaceWithRootPaths(indexPath, pathsToChange);
+
+  css_paths.forEach((css_path) => {
+    replaceWithRootPaths(css_path, pathsToChange);
+  });
 }
 
 function replaceWithRootPaths(filePath, replacements) {
@@ -70,6 +76,24 @@ function convertToRelativePath(absolutePath, targetDir) {
   const relativePath = absolutePath.slice(targetIndex + targetDir.length);
 
   return relativePath;
+}
+
+function getCssFiles(dirPath) {
+  let cssFiles = [];
+
+  const files = fs.readdirSync(dirPath);
+  files.forEach((file) => {
+    const filePath = path.join(dirPath, file);
+    const stat = fs.statSync(filePath);
+
+    if (stat.isFile() && path.extname(file) === ".css") {
+      cssFiles.push(filePath);
+    } else if (stat.isDirectory()) {
+      cssFiles = cssFiles.concat(getCssFiles(filePath));
+    }
+  });
+
+  return cssFiles;
 }
 
 moveFilesAndPathsToRoot(buildDir);
