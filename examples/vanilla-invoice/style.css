@@ -1,0 +1,27 @@
+* { box-sizing: border-box; }
+body { font-family: "Inter", "Helvetica Neue", Arial, sans-serif; color: #1f2937; margin: 0; }
+.invoice { max-width: 100%; }
+.inv-header { display: flex; justify-content: space-between; align-items: flex-start; padding-bottom: 16px; border-bottom: 2px solid #6366f1; margin-bottom: 24px; }
+.brand { display: flex; gap: 14px; align-items: center; }
+.logo { width: 48px; height: 48px; border-radius: 12px; background: linear-gradient(135deg, #6366f1, #8b5cf6); color: #fff; font-weight: 700; font-size: 18px; display: flex; align-items: center; justify-content: center; }
+.brand-name { font-size: 18px; font-weight: 700; color: #111827; }
+.brand-meta { font-size: 11px; color: #6b7280; max-width: 260px; }
+.inv-meta h1 { margin: 0 0 8px; font-size: 22px; color: #6366f1; }
+.meta-row { display: flex; justify-content: space-between; gap: 24px; font-size: 12px; padding: 2px 0; }
+.meta-row span:first-child { color: #6b7280; }
+.meta-row span:last-child { font-weight: 600; }
+.parties { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 24px; }
+.party h3 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: #6366f1; margin: 0 0 6px; }
+.party p { margin: 2px 0; font-size: 13px; }
+.items { width: 100%; border-collapse: collapse; margin-bottom: 24px; font-size: 12px; }
+.items th { text-align: left; padding: 10px 8px; background: #f3f4f6; border-bottom: 2px solid #e5e7eb; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: #374151; }
+.items td { padding: 10px 8px; border-bottom: 1px solid #e5e7eb; }
+.items tbody tr:nth-child(even) { background: #fafafa; }
+.items td:nth-child(3), .items td:nth-child(4), .items td:nth-child(5) { text-align: right; }
+.totals { display: flex; justify-content: flex-end; margin-bottom: 24px; }
+.totals-box { width: 280px; border: 1px solid #e5e7eb; border-radius: 8px; padding: 12px 16px; background: #f9fafb; }
+.totals-row { display: flex; justify-content: space-between; font-size: 13px; padding: 4px 0; }
+.totals-row.total { border-top: 2px solid #6366f1; margin-top: 6px; padding-top: 8px; font-weight: 700; font-size: 15px; color: #6366f1; }
+.payment { background: #eef2ff; border-radius: 8px; padding: 16px; font-size: 12px; }
+.payment h3 { margin: 0 0 8px; color: #4338ca; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; }
+.payment p { margin: 2px 0; }

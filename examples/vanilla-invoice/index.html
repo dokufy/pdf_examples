@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AetherCloud Tax Invoice</title>
+</head>
+<body>
+  <div id="invoice-root">
+    <div class="invoice">
+      <header class="inv-header">
+        <div class="brand">
+          <div class="logo">AC</div>
+          <div>
+            <div class="brand-name" data-paperfit-text="company.name"></div>
+            <div class="brand-meta" data-paperfit-text="company.address"></div>
+          </div>
+        </div>
+        <div class="inv-meta">
+          <h1>Tax Invoice</h1>
+          <div class="meta-row"><span>Invoice No.</span><span data-paperfit-text="invoice.number"></span></div>
+          <div class="meta-row"><span>Issue Date</span><span data-paperfit-text="invoice.date"></span></div>
+          <div class="meta-row"><span>Due Date</span><span data-paperfit-text="invoice.due"></span></div>
+          <div class="meta-row"><span>Billing Period</span><span data-paperfit-text="invoice.period"></span></div>
+        </div>
+      </header>
+
+      <section class="parties">
+        <div class="party">
+          <h3>Billed From</h3>
+          <p data-paperfit-text="company.name"></p>
+          <p data-paperfit-text="company.address"></p>
+          <p>VAT: <span data-paperfit-text="company.vat"></span></p>
+        </div>
+        <div class="party">
+          <h3>Billed To</h3>
+          <p data-paperfit-text="client.name"></p>
+          <p data-paperfit-text="client.address"></p>
+          <p>VAT: <span data-paperfit-text="client.vat"></span></p>
+        </div>
+      </section>
+
+      <table class="items">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Usage Metric</th>
+            <th>Qty</th>
+            <th>Unit Price (EUR)</th>
+            <th>Amount (EUR)</th>
+          </tr>
+        </thead>
+        <tbody data-paperfit-each="items">
+          <template>
+            <tr>
+              <td data-paperfit-text="description"></td>
+              <td data-paperfit-text="unit"></td>
+              <td data-paperfit-text="qty"></td>
+              <td data-paperfit-text="rate"></td>
+              <td data-paperfit-text="amount"></td>
+            </tr>
+          </template>
+        </tbody>
+      </table>
+
+      <section class="totals">
+        <div class="totals-box">
+          <div class="totals-row"><span>Subtotal</span><span data-paperfit-text="subtotal"></span></div>
+          <div class="totals-row"><span>VAT (21%)</span><span data-paperfit-text="tax"></span></div>
+          <div class="totals-row total"><span>Total Due (EUR)</span><span data-paperfit-text="total"></span></div>
+        </div>
+      </section>
+
+      <section class="payment">
+        <h3>Payment Instructions</h3>
+        <p>Bank: <span data-paperfit-text="bank.name"></span></p>
+        <p>IBAN: <span data-paperfit-text="bank.iban"></span></p>
+        <p>BIC/SWIFT: <span data-paperfit-text="bank.bic"></span></p>
+        <p>Reference: <span data-paperfit-text="bank.ref"></span></p>
+      </section>
+    </div>
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

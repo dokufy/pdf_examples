@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AetherCloud Tax Invoice Input",
+  "type": "object",
+  "properties": {
+    "company": { "type": "object" },
+    "client": { "type": "object" },
+    "invoice": { "type": "object" },
+    "items": { "type": "array" },
+    "subtotal": { "type": "number" },
+    "taxRate": { "type": "number" },
+    "tax": { "type": "number" },
+    "total": { "type": "number" },
+    "currency": { "type": "string" },
+    "bank": { "type": "object" }
+  },
+  "required": ["company", "client", "invoice", "items", "total", "bank"]
+}

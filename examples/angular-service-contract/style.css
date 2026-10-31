@@ -1,0 +1,25 @@
+* { box-sizing: border-box; }
+body { font-family: "Inter", "Helvetica Neue", Arial, sans-serif; color: #1f2937; margin: 0; }
+.contract { padding: 4px 0; }
+.ctr-header { border-bottom: 2px solid #1d4ed8; padding-bottom: 12px; margin-bottom: 20px; }
+.ctr-header h1 { margin: 0 0 8px; font-size: 22px; color: #1d4ed8; }
+.ctr-meta { display: flex; gap: 24px; font-size: 12px; color: #6b7280; }
+.ctr-meta span { font-weight: 600; color: #374151; }
+.parties { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 20px; }
+.party { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px; }
+.party h3 { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #1d4ed8; margin: 0 0 6px; }
+.party-name { font-weight: 700; font-size: 14px; margin: 4px 0; }
+.party p { margin: 2px 0; font-size: 12px; }
+h2 { font-size: 15px; color: #1d4ed8; margin: 18px 0 10px; }
+.sla { width: 100%; border-collapse: collapse; font-size: 12px; }
+.sla th { text-align: left; padding: 8px; background: #eff6ff; border-bottom: 2px solid #bfdbfe; font-size: 11px; text-transform: uppercase; color: #1e40af; }
+.sla td { padding: 8px; border-bottom: 1px solid #e2e8f0; }
+.sla tr:nth-child(even) { background: #f8fafc; }
+.tier { font-weight: 700; color: #1d4ed8; }
+.clauses { font-size: 12px; line-height: 1.6; padding-left: 20px; }
+.clauses li { margin-bottom: 8px; }
+.sigs { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 24px; }
+.sig-line { border-top: 1px solid #1f2937; margin-bottom: 8px; height: 40px; }
+.sig-name { font-weight: 700; margin: 0; font-size: 13px; }
+.sig-title { font-size: 11px; color: #6b7280; margin: 2px 0; }
+.sig-date { font-size: 11px; color: #374151; margin: 2px 0; }

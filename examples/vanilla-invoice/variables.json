@@ -1,0 +1,37 @@
+{
+  "company": {
+    "name": "AetherCloud Inc.",
+    "address": "12 Helix Avenue, Suite 400, San Francisco, CA 94105, USA",
+    "vat": "US-98-7654321"
+  },
+  "client": {
+    "name": "Nordic Robotics GmbH",
+    "address": "Industriestrasse 42, 80339 Munich, Germany",
+    "vat": "DE-123456789"
+  },
+  "invoice": {
+    "number": "INV-2024-0042",
+    "date": "November 15, 2024",
+    "due": "December 15, 2024",
+    "period": "October 1 - October 31, 2024"
+  },
+  "items": [
+    { "description": "Compute instances (on-demand)", "unit": "vCPU-hours", "qty": 1240, "rate": 0.042, "amount": 52.08 },
+    { "description": "Managed Kubernetes cluster", "unit": "cluster-hours", "qty": 744, "rate": 0.18, "amount": 133.92 },
+    { "description": "Object storage (hot tier)", "unit": "GB-month", "qty": 2850, "rate": 0.023, "amount": 65.55 },
+    { "description": "Egress data transfer", "unit": "GB", "qty": 1820, "rate": 0.09, "amount": 163.80 },
+    { "description": "Managed PostgreSQL (db.m6g.large)", "unit": "instance-hours", "qty": 744, "rate": 0.31, "amount": 230.64 },
+    { "description": "Premium support plan", "unit": "month", "qty": 1, "rate": 499.00, "amount": 499.00 }
+  ],
+  "subtotal": 1144.99,
+  "taxRate": 0.21,
+  "tax": 240.45,
+  "total": 1385.44,
+  "currency": "EUR",
+  "bank": {
+    "name": "Deutsche Bank AG",
+    "iban": "DE89 3704 0044 0532 0130 00",
+    "bic": "DEUTDEDB",
+    "ref": "INV-2024-0042"
+  }
+}

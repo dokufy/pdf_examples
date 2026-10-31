@@ -1,29 +1,34 @@
 {
-  "name": "gym_contract",
-  "version": "0.1.0",
+  "name": "pdf_examples",
+  "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && node post-build.js",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "node scripts/build-all.mjs",
+    "previews": "node scripts/generate-previews.mjs",
+    "test": "node scripts/test-examples.mjs"
   },
   "dependencies": {
-    "d3": "^7.9.0",
-    "next": "^14.2.4",
-    "pagedjs": "file:../../../pagedjs",
-    "react": "^18",
-    "react-dom": "^18"
+    "@dokufy/paperfitjs": "^1.0.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "vue": "^3.5.44",
+    "@angular/core": "^22.2.4",
+    "@angular/common": "^22.2.4",
+    "@angular/compiler": "^22.2.4",
+    "@angular/platform-browser": "^22.2.4",
+    "zone.js": "^0.16.3",
+    "rxjs": "^7.8.2",
+    "d3": "^7.9.0"
   },
   "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
     "@types/d3": "^7.4.3",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.4",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "vite": "^8.3.5",
+    "@vitejs/plugin-react": "^6.1.2",
+    "@vitejs/plugin-vue": "^6.0.10",
+    "typescript": "^7.0.2",
+    "playwright": "^1.64.1"
   }
 }

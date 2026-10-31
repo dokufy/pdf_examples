@@ -1,0 +1,29 @@
+{
+  "company": "Energo",
+  "reportYear": 2024,
+  "title": "Sustainability Annual Report",
+  "executiveSummary": "In 2024 Energo delivered a 23 percent reduction in greenhouse gas emissions year on year while growing adjusted earnings to USD 23 billion. Renewables pipeline additions reached 6 GW and gross capital expenditure to transition solutions rose to 15 percent. Safety performance improved with a serious incident frequency of 0.2 per million hours worked.",
+  "kpis": [
+    { "amount": "0.2", "unit": "SIF", "description": "Serious incident frequency (per million hours worked)" },
+    { "amount": "5.4", "unit": "KG / BOE", "description": "CO2 upstream intensity" },
+    { "amount": "23", "unit": "PERCENT", "description": "GHG emissions reduced year on year" },
+    { "amount": "23", "unit": "USD BILLION", "description": "Adjusted earnings" },
+    { "amount": "1.8", "unit": "TRIF", "description": "Total recordable incident frequency" },
+    { "amount": "15", "unit": "PERCENT", "description": "Gross capex to transition solutions" },
+    { "amount": "6", "unit": "GW", "description": "Renewables pipeline additions" },
+    { "amount": "14", "unit": "USD BILLION", "description": "Cash flow from operations after tax" }
+  ],
+  "segments": [
+    { "title": "Total revenue", "data": [{ "name": "Solar", "value": 30 }, { "name": "Wind", "value": 36 }, { "name": "Hydro", "value": 54 }, { "name": "Fossil fuels", "value": 35 }, { "name": "Other", "value": 12 }] },
+    { "title": "Total invested", "data": [{ "name": "Solar", "value": 15 }, { "name": "Wind", "value": 20 }, { "name": "Hydro", "value": 25 }, { "name": "Fossil fuels", "value": 10 }, { "name": "Other", "value": 6 }] },
+    { "title": "Energy sources", "data": [{ "name": "Solar", "value": 30 }, { "name": "Wind", "value": 46 }, { "name": "Hydro", "value": 74 }, { "name": "Fossil fuels", "value": 25 }, { "name": "Other", "value": 9 }] },
+    { "title": "Power generation", "data": [{ "name": "Solar", "value": 29 }, { "name": "Wind", "value": 33 }, { "name": "Hydro", "value": 60 }, { "name": "Fossil fuels", "value": 45 }, { "name": "Other", "value": 11 }] }
+  ],
+  "imageCards": [
+    { "imageSrc": "/about-us.png", "title": "About us", "description": "An introduction to who we are, our business and our strategy." },
+    { "imageSrc": "/group-performance.png", "title": "Group performance", "description": "Group financial and sustainability performance, research and innovation activities." },
+    { "imageSrc": "/reporting-segment-performance.png", "title": "Reporting segment performance", "description": "Financial, operational and sustainability performance review and strategic update." },
+    { "imageSrc": "/financial-statements.png", "title": "Financial statements", "description": "Consolidated financial statements of the Energo group." },
+    { "imageSrc": "/additional-information.png", "title": "Additional information", "description": "Complementary information supporting the report." }
+  ]
+}

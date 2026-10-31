@@ -1,0 +1,69 @@
+{
+  "provider": "Dokufy Enterprise Cloud",
+  "client": "Nordic Robotics GmbH",
+  "contractNumber": "MSA-2024-771",
+  "effectiveDate": "January 1, 2025",
+  "term": "36 months",
+  "parties": [
+    {
+      "role": "Provider",
+      "name": "Dokufy Enterprise Cloud Ltd.",
+      "address": "22 Bishopsgate, London EC2N 4BQ, United Kingdom",
+      "rep": "Elena Voss, VP Sales"
+    },
+    {
+      "role": "Client",
+      "name": "Nordic Robotics GmbH",
+      "address": "Industriestrasse 42, 80339 Munich, Germany",
+      "rep": "Jonas Becker, CTO"
+    }
+  ],
+  "sla": [
+    {
+      "tier": "Standard",
+      "uptime": "99.9%",
+      "credit": "10% of monthly fee",
+      "response": "4 business hours"
+    },
+    {
+      "tier": "Professional",
+      "uptime": "99.95%",
+      "credit": "25% of monthly fee",
+      "response": "2 business hours"
+    },
+    {
+      "tier": "Enterprise",
+      "uptime": "99.99%",
+      "credit": "50% of monthly fee",
+      "response": "1 hour (24/7)"
+    },
+    {
+      "tier": "Mission Critical",
+      "uptime": "99.999%",
+      "credit": "100% of monthly fee",
+      "response": "15 minutes (24/7)"
+    }
+  ],
+  "clauses": [
+    "Services. Provider shall deliver the Dokufy Enterprise Cloud platform, including document generation, storage, and the paperfit PDF engine, in accordance with this Agreement.",
+    "Availability. Provider commits to the uptime percentages set out in the SLA table. Service credits are the sole and exclusive remedy for downtime.",
+    "Data Protection. Provider processes Client data solely per Client instructions and maintains SOC 2 Type II and ISO 27001 controls.",
+    "Term and Renewal. The initial term is 36 months and renews automatically for successive 12-month periods unless terminated 60 days prior.",
+    "Fees and Payment. Fees are invoiced monthly in advance. Late payments accrue interest at 1.5% per month.",
+    "Limitation of Liability. Provider's aggregate liability is capped at fees paid in the 12 months preceding the claim.",
+    "Termination. Either party may terminate for material breach not cured within 30 days of written notice.",
+    "Governing Law. This Agreement is governed by the laws of England and Wales."
+  ],
+  "signatures": [
+    {
+      "name": "Elena Voss",
+      "title": "VP Sales, Dokufy Enterprise Cloud Ltd.",
+      "date": "December 12, 2024"
+    },
+    {
+      "name": "Jonas Becker",
+      "title": "Chief Technology Officer, Nordic Robotics GmbH",
+      "date": "December 14, 2024"
+    }
+  ]
+}

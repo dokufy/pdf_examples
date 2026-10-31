@@ -1,0 +1,24 @@
+{
+  "company": "Vanguard Meridian Asset Management",
+  "period": "Q4 2024",
+  "kpis": [
+    { "label": "Assets Under Management", "value": "USD 4.82B", "delta": "+6.4%" },
+    { "label": "Net Portfolio Return", "value": "+12.7%", "delta": "vs +9.1% benchmark" },
+    { "label": "Sharpe Ratio", "value": "1.84", "delta": "top quartile" },
+    { "label": "Dividend Yield", "value": "3.42%", "delta": "+18 bps YoY" }
+  ],
+  "allocation": [
+    { "name": "Equities", "pct": 42, "color": "#0f766e" },
+    { "name": "Fixed Income", "pct": 28, "color": "#2563eb" },
+    { "name": "Alternatives", "pct": 18, "color": "#7c3aed" },
+    { "name": "Cash & Equiv.", "pct": 12, "color": "#9ca3af" }
+  ],
+  "holdings": [
+    { "ticker": "AAPL", "name": "Apple Inc.", "sector": "Technology", "weight": "6.2%", "return": "+18.4%", "value": "USD 299M" },
+    { "ticker": "MSFT", "name": "Microsoft Corp.", "sector": "Technology", "weight": "5.4%", "return": "+14.9%", "value": "USD 260M" },
+    { "ticker": "NVDA", "name": "NVIDIA Corp.", "sector": "Semiconductors", "weight": "4.1%", "return": "+42.1%", "value": "USD 198M" },
+    { "ticker": "JPM", "name": "JPMorgan Chase", "sector": "Financials", "weight": "3.6%", "return": "+9.2%", "value": "USD 173M" },
+    { "ticker": "XOM", "name": "Exxon Mobil", "sector": "Energy", "weight": "2.9%", "return": "+7.8%", "value": "USD 139M" },
+    { "ticker": "UNH", "name": "UnitedHealth Group", "sector": "Healthcare", "weight": "2.7%", "return": "+5.6%", "value": "USD 130M" }
+  ]
+}
