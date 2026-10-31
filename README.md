@@ -1,6 +1,6 @@
 # pdf_examples
 
-Reference PDF templates for the [paperfit](https://github.com/dokufy/paperfit) engine and [paperfit.js](https://github.com/dokufy/paperfit.js).
+Reference PDF templates for the [paperfit](https://github.com/dokufy/paperfit) engine and [paperfitjs](https://github.com/dokufy/paperfitjs).
 
 Each example is a short, self-contained template that runs in the browser, paginates with Paged.js, and is ready to upload to paperfit for PDF generation.
 
